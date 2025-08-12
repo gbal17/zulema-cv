@@ -1,0 +1,213 @@
+body {
+    font-family: 'Futura', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('240909-AZO1109-CUBES-CS-2_SE(UL).jpg'); /* path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* ===========================
+   CONTAINER LAYOUT
+=========================== */
+.container {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* ===========================
+   LEFT PROFILE SECTION
+=========================== */
+.profile {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 25%;
+    min-width: 250px;
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.profile h2 { margin: 10px 0; font-size: 1.5em; }
+.profile h3 { font-size: 1.1em; color: #3c3939; }
+.profile p  { font-size: 0.9em; color: #3c3939; }
+
+/* Icons */
+.icons a {
+    font-size: 1.5em;
+    margin: 10px;
+    color: #0073e6;
+    text-decoration: none;
+}
+.icons a:hover { color: #005bb5; }
+
+/* Email Styling */
+.email {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px !important;
+}
+
+/* CV Button Link Style */
+.cv-btn {
+    color: #0073e6 !important;
+    font-weight: bold;
+    font-size: 2em !important;
+    text-decoration: none !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    display: inline;
+    margin-top: 5px !important;
+}
+.cv-btn:hover {
+    color: #005bb5 !important;
+    text-decoration: underline !important;
+}
+
+/* ===========================
+   RIGHT CONTENT COLUMN
+=========================== */
+.content {
+    flex: 1.5;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* consistent spacing between cards */
+}
+
+/* Unified card style for ALL direct children */
+.content > section,
+.content > .about,
+.content > .interests,
+.content > .affiliations,
+.content > .education,
+.content > .publications,
+.content > .gee-apps {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    margin: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.75); /* overlay on background image */
+    /* To use an image inside each card:
+       background-image: url('your-image.png');
+       background-size: cover;
+       background-position: center;
+    */
+}
+
+/* Remove inner section backgrounds to prevent double-box look */
+.content > * > * {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* ===========================
+   SECTION SPECIFIC STYLES
+=========================== */
+.about p { margin-bottom: 0 !important; line-height: 1; }
+.interests-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 15px;
+    list-style: none;
+    padding: 0;
+}
+.interests-list li { white-space: nowrap; padding: 1px 8px; }
+
+/* Reduced spacing for specific sections */
+.interests p,
+.affiliations p,
+.education p {
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* Publications List */
+.publications ul,
+.gee-apps ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.publications li,
+.gee-apps li {
+    padding: 2px 0;
+    line-height: 1.2;
+}
+
+/* Links */
+a {
+    color: #0073e6 !important;
+    text-decoration: none !important;
+}
+a:hover { color: #005bb5 !important; text-decoration: underline !important; }
+a:visited { color: #0073e6 !important; }
+
+/* ===========================
+   QUOTE STYLING
+=========================== */
+.quote {
+    font-family: "American Typewriter", serif !important;
+    font-size: 0.8em !important;
+    text-align: center;
+    color: #222;
+    margin-top: 10px;
+    padding: 8px 10px 4px;
+    line-height: 1.4 !important;
+}
+.quote-author {
+    font-size: 1em !important;
+    font-weight: bold;
+    display: block;
+    margin-top: 2px;
+}
+
+/* ===========================
+   IMAGE STYLING
+=========================== */
+.map-image {
+    width: 100%;
+    max-width: 250px;
+    margin: 15px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+   TITLES
+=========================== */
+h1, h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #000 !important;
+}
+.journey-title {
+    font-family: "Futura", serif;
+    font-size: 1.3em;
+    font-weight: bold !important;
+    text-align: center;
+    color: #000 !important;
+    margin: 25px 0 10px;
+}
