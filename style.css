@@ -2,7 +2,7 @@ body {
     font-family: 'Futura', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('240909-AZO1109-CUBES-CS-2_SE(UL).jpg'); /* path to your image */
+    background-image: url('back.jpg'); /* path to your image */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
